@@ -1,0 +1,445 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #c3cfe2; /* Soft background color */
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #424242;
+    color: white;
+}
+
+}
+.logo {
+    font-size: 24px;
+}
+.logo img{
+    width:10%;
+    height:10%;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 500px;
+    background-color: #f4f4f4;
+    text-align: center;
+    color: black;
+    overflow: hidden;
+    background-image: url('Homepage.img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.tagline {
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 27px;
+    font-weight: bold;
+    padding-left: 40px;
+    text-align: left;
+    color: white;
+    text-decoration
+}
+
+.tagline p {
+    font-weight: normal;
+    font-size: 19px;
+}
+
+.cta {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 60px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #1A43BF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+/* Popular Section */
+.popular {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+    al: center;
+}
+
+.popular h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.popular-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.popular-images img {
+    width: 200px;
+    height: 270px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+/* News/Blog Section */
+.news-blog {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-blog img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+/* Reviews Section */
+.review {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.review-content {
+    flex-grow: 1;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.rating span {
+    font-size: 18px;
+    color: #000; /* Adjust color if needed */
+    margin-right: 5px;
+}
+
+.review-date {
+    font-size: 12px;
+    color: #999;
+    margin-left: 10px;
+}
+
+.review-text {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Contact Form Styles */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+}
+.text{
+    text-align:left;
+    font-size: 24px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #ff5733;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e04e2b;
+}
+
+/* About Page Specific Styles */
+section {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.text-content {
+    width: 50%;
+}
+
+.image-content {
+    width: 40%;
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.awards {
+    background-color: #fafafa;
+    padding: 40px;
+    text-align: center;
+}
+
+.awards-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.award-item {
+    width: 22%;
+}
+
+.award-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.why-choose-us {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .news-blog, .review-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .news-blog img {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .popular-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popular-images img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+
+/* Product */
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  padding: 20px 60px 20px 60px;
+  text-align: center;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 5px;
+  color: black;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  margin-bottom:50px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color:darkblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.pro{
+    color: white;
+    padding: 10px 10px 15px 10px;
+}
+
+.tagpro{
+    color: white;
+    padding: 10px 10px 35px 10px;
+}
+.content-card{
+    margin-bottom: 20px;
+}
+.moree {
+    display: flex;              
+    justify-content: center;     
+    align-items: flex-end;      
+    height: 60px;                
+    padding: 50px;              
+}
+.more {
+    padding: 10px 20px;         
+    background-color: #007bff;  
+    color: white;                
+    border: none;               
+    border-radius: 5px;        
+    cursor: pointer;             
+    font-size: 24px;            
+}
+
+.more:hover {
+    background-color: #0056b3;  
+}
+
+.link{
+    size: 24px;
+    display: inline-flex;
+    color: black;
+    text-decoration: none;
+    align-items: center;r
+}
+
+.contact-info{
+    text-decoration: none;
+}
+
